@@ -23,14 +23,12 @@ import upeu.edu.pe.DAD_Examen.service.Detalle_VentaService;
 import upeu.edu.pe.DAD_Examen.service.VentasService;
 
 @RequestMapping("/ventas")
-@CrossOrigin(origins = "http://localhost:3000")   
+@CrossOrigin(origins = "*")   
 @RestController
 public class VentasController {
 	@Autowired
 	private VentasService vs;
-	
-	
-	
+
 	@Autowired
 	private Detalle_VentaService dvs;
 	
@@ -99,5 +97,12 @@ public class VentasController {
 	@DeleteMapping("/eliminarporId/{idventas}")
 	public void deleteOne(@PathVariable(name="idventas") Long idventas) {
 		vs.eliminarporId(idventas);                  
+	}
+	
+	@PostMapping("/vender")
+	public void vender(@RequestBody Ventas ventas) {
+		Ventas v=new Ventas();
+		Detalle_Venta dv=new Detalle_Venta();
+		vs.Vender(v, dv);
 	}
 }
