@@ -13,7 +13,7 @@ import upeu.edu.pe.DAD_Examen.dto.Persona;
 import upeu.edu.pe.DAD_Examen.service.PersonaService;
 
 @RequestMapping("/persona")
-@CrossOrigin(origins = "https://dadfront.herokuapp.com") 
+@CrossOrigin(origins = "https://dadbackend.herokuapp.com") 
 @RestController
 public class PersonaController {
 	@Autowired
