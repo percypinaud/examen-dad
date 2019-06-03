@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import upeu.edu.pe.DAD_Examen.dto.Producto;
 import upeu.edu.pe.DAD_Examen.service.ProductoService;
 @RequestMapping("/producto")
-@CrossOrigin(origins = "http://localhost:3000") 
+@CrossOrigin(origins = "https://dadfront.herokuapp.com") 
 @RestController
 public class ProductoController {
 	@Autowired

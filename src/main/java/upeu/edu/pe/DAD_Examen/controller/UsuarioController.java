@@ -11,7 +11,7 @@ import upeu.edu.pe.DAD_Examen.dto.Usuario;
 import upeu.edu.pe.DAD_Examen.service.UsuarioService;
 
 @RequestMapping("/usuario")
-@CrossOrigin(origins = "http://localhost:3000")   
+@CrossOrigin(origins = "https://dadfront.herokuapp.com")   
 @RestController
 public class UsuarioController {
 

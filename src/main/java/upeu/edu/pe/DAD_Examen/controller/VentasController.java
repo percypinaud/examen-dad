@@ -23,7 +23,7 @@ import upeu.edu.pe.DAD_Examen.service.Detalle_VentaService;
 import upeu.edu.pe.DAD_Examen.service.VentasService;
 
 @RequestMapping("/ventas")
-@CrossOrigin(origins = "http://localhost:3000")   
+@CrossOrigin(origins = "https://dadfront.herokuapp.com")   
 @RestController
 public class VentasController {
 	@Autowired
